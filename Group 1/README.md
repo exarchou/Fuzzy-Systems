@@ -1,8 +1,8 @@
 # Group 1
 
-The purpose of this project is the control of a DC Motor using **Fuzzy Controller**.
+The purpose of this project is the control of a DC Motor using a **Fuzzy Controller**.
 
-<img src="images/1.png">
+<img src="images/1.jpg">
 
 The control signal has to meet the following standards:
 
