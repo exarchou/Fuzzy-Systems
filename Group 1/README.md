@@ -67,6 +67,9 @@ We investigate the hypothesis of T~L~ = 0.
 $$
 \frac{Ω(s)}{V~a~(s)} = \frac{18.69}{s+12.064}
 $$
+
+![](https://www.codecogs.com/eqnedit.php?latex=Cost&space;=&space;[10L1.D_{size}(1+\frac{L1.D_{Assoc}}{20}&space;+&space;\frac{CacheLine}{128})+10L1.I_{size}(1+\frac{L1.I_{Assoc}}{20}&space;+&space;\frac{CacheLine}{128})+L2_{size}(1+\frac{L2_{Assoc}}{40}+\frac{CacheLine}{256})])
+
 In automatic control systems a PI controller has the form: 
 $$
 H_c (s)=K_P+K_I/s = \frac{K_P (s+K_I/K_P )}{s}
