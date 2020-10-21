@@ -20,7 +20,7 @@ The control signal has to meet the following standards:
 
 To implement the controller I have chosen a PI fuzzy controller. Sampling time was set to 0.01 sec. Verbal variables and their membership functions are shown bellow: 
 
-<img src="C:\Users\Dimitris\AppData\Roaming\Typora\typora-user-images\image-20201021134357446.png" alt="image-20201021134357446" style="zoom:80%;" />
+<img src="images/2.jpg">
 
 ​                                                                                             
 
@@ -40,13 +40,13 @@ The features of the Fuzzy Controller are:
 
 Fuzzy Logic Designer, offered by MATLAB, is used to implement the Rules Base.
 
-<img src="C:\Users\Dimitris\AppData\Roaming\Typora\typora-user-images\image-20201021140701152.png" alt="image-20201021140701152" style="zoom:80%;" />
+<img src="images/3.jpg">
 
 
 
 Membership Functions have the following forms:
 
-<img src="C:\Users\Dimitris\AppData\Roaming\Typora\typora-user-images\image-20201021140748336.png" alt="image-20201021140748336" style="zoom:80%;" />
+<img src="images/4.jpg">
 
 
 
@@ -89,7 +89,7 @@ At this point we can calculate the values of the parameters:
 
 ### Simulink
 
-![image-20201021143008344](C:\Users\Dimitris\AppData\Roaming\Typora\typora-user-images\image-20201021143008344.png)
+<img src="images/5.jpg">
 
 
 
