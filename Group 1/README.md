@@ -244,4 +244,4 @@ With the help of tool **Data Inspector** we can see the responses:
 
 It is obvious that the **Fuzzy PI Controller** behaves more efficient than the  **Conventional PI Controller**. Not only the rise time is significantly smaller, but also it succeeds a better disturbance rejection. As we can see the gain of the disturbance is: 
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=20&space;log⁡(164/150)=0.77<20dB" target="_blank"><img src="https://latex.codecogs.com/gif.latex?20&space;log⁡(164/150)=0.77<20dB" title="20 log⁡(164/150)=0.77<20dB" /></a>
+<a href="https://www.codecogs.com/eqnedit.php?latex=20&space;log(164/150)=0.77<20dB" target="_blank"><img src="https://latex.codecogs.com/gif.latex?20&space;log(164/150)=0.77<20dB" title="20 log(164/150)=0.77<20dB" /></a>
