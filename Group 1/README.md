@@ -2,7 +2,10 @@
 
 The purpose of this project is the control of a DC Motor using a **Fuzzy Controller**.
 
+<p align="center">
 <img src="images/1.jpg">
+</p>
+
 
 The control signal has to meet the following standards:
 
@@ -20,7 +23,9 @@ The control signal has to meet the following standards:
 
 To implement the controller I have chosen a PI fuzzy controller. Sampling time was set to 0.01 sec. Verbal variables and their membership functions are shown bellow: 
 
+<p align="center">
 <img src="images/2.jpg">
+</p>
 
 ​                                                                                             
 
@@ -40,13 +45,17 @@ The features of the Fuzzy Controller are:
 
 Fuzzy Logic Designer, offered by MATLAB, is used to implement the Rules Base.
 
+<p align="center">
 <img src="images/3.jpg">
+</p>
 
 
 
 Membership Functions have the following forms:
 
+<p align="center">
 <img src="images/4.jpg">
+</p>
 
 
 
@@ -89,19 +98,24 @@ At this point we can calculate the values of the parameters:
 
 ### Simulink
 
+<p align="center">
 <img src="images/5.jpg">
+</p>
 
 
 
 The reference signal was fed using the tool **signal Builder** and the following function:
 
+<p align="center">
 <img src="images/6.jpg">
-
+</p>
 
 
 With the help of tool **Data Inspector** we can see that our system meets the requirements:
 
-<img src="images/7.jpg">
+<p align="center">
+<img src="images/7.jpg" width = "800">
+</p>
 
 
 
@@ -113,7 +127,9 @@ To reduce rise time and steady state error the gains went through the process of
 
 
 
+<p align="center">
 <img src="images/8.jpg">
+</p>
 
 
 
@@ -121,8 +137,9 @@ Observing the Data Inspector is clear that rise time and elevation were signific
 
 
 
+<p align="center">
 <img src="images/9.jpg">
-
+</p>
 
 
 
@@ -131,8 +148,9 @@ Observing the Data Inspector is clear that rise time and elevation were signific
 
 At this point we will examine the output of the system, when input is fed with the rule **IF e is PS AND Δe is NM\. **
 
+<p align="center">
 <img src="images/10.jpg">
-
+</p>
 
 
 
@@ -141,7 +159,9 @@ At this point we will examine the output of the system, when input is fed with t
 
 Function **gensurf** was used to produce a graphical relationship between input and output. As output for each fuzzy set is considered its middle point, because of the COS defuzzifier.
 
+<p align="center">
 <img src="images/11.jpg">
+</p>
 
 
 
@@ -155,20 +175,26 @@ The signal stands for the speed of a train. For this reason it is essential to e
 
 ### Simulink
 
+<p align="center">
 <img src="images/12.jpg">
+</p>
 
 The reference signal has a trapezoidal form, using the signal builder:
 
 
 
+<p align="center">
 <img src="images/13.jpg">
+</p>
 
 
 With the help of tool **Data Inspector** we can see that our system meets the requirements:
 
 
 
+<p align="center">
 <img src="images/14.jpg">
+</p>
 
 
 
@@ -178,7 +204,9 @@ With the help of tool **Data Inspector** we can see that our system meets the re
 
 The hypothesis of this scenario is that we have a non zero T~L~ that stands for a disturbance.
 
+<p align="center">
 <img src="images/15.jpg">
+</p>
 
 Our controller has to observe this disturbance and reject it. The goal of this scenario is to compare the functionality of a **Fuzzy PI Controller** and a **Conventional PI Controller**.
 
@@ -188,9 +216,13 @@ Our controller has to observe this disturbance and reject it. The goal of this s
 
 The two different controllers were embodied to the initial circuit, in order to compare their responses.
 
+<p align="center">
 <img src="images/16.jpg">
+</p>
 
+<p align="center">
 <img src="images/17.jpg">
+</p>
 
 
 
@@ -198,7 +230,9 @@ With the help of tool **Data Inspector** we can see the responses:
 
 
 
+<p align="center">
 <img src="images/18.jpg">
+</p>
 
 
 
