@@ -117,8 +117,8 @@ The dataset that will be used for this part is the **Superconductivity dataset**
 
 ### Grid Search
 
-- The **dataset** is loaded and the data go through a **normalization** process, in order to belong to [-1,1].
-- Loaded data are separated into three not-overlapping groups. **60%** of them are used for **training**, **20%** for **validation** and **20%** for **check**.
+- The **dataset** is loaded and the first step is to delete the duplicate records with the **unique** function. Then data go through a **normalization** process, in order to belong to [-1,1].
+- Loaded data are separated into three not-overlapping groups. **60%** of them are used for **training**, **20%** for **validation** and **20%** for **check**, in a way that ensures the homogeneity of the classes in them, as described in the previous part of the work..
 - The most important features are extracted with **Relief** algorithm and a table of indices of features with descending significance is returned. The parameter of the nearest neighbors k remains as default (10).
 - Create a grid for error and rules, where each row represents the number of attributes and each column the number of rules. These values are obtained from the sets NF = [3 6 9 12] and NR = [5 8 11 14 17]. Also initialization of 4x5 radii matrix. **Radii** indicates the amplitude of the participation functions of the input variables which in our case is Gaussian. So a small radii means a small variation around an average value, while a large radii means a large variation. The values it takes are in the interval [0,1] and were chosen appropriately so that **genfis2** gives the desired number of rules.
 - A model with **genfis2** is generated for each point of the grid. At each point of the grid the training set has kept only the most important features. As arguments in the function are these characteristics and the corresponding radii.
@@ -132,7 +132,7 @@ The dataset that will be used for this part is the **Superconductivity dataset**
 
 
 
-- 5-Fold Cross Validation application for each point of the grid. The training set is divided into 5 sections. 4 of them are used for the training of one model at a time and the last one for its validation. Five different combinations give birth to 5 different models for each point of the grid. Each of these models is trained with **anfis** with different training and verification sets from the rest 4. All models have as their initial **fis** what was born in the previous step. A small number of iterations are used (40 due to increased computational complexity.
+- **5-Fold Cross Validation** application for each point of the grid. The training set is divided into 5 sections. 4 of them are used for the training of one model at a time and the last one for its validation. Five different combinations give birth to 5 different models for each point of the grid. Each of these models is trained with **anfis** with different training and verification sets from the rest 4. All models have as their initial **fis** what was born in the previous step. A small number of iterations are used (40 due to increased computational complexity.
 - Models estimate outputs with inputs to the initial validation sets via the **evalfis** function. The corresponding position of the error grid is filled with Mean-Squared Error.
 - Finally, the point of the grid that gives the minimum **MSE** is calculated. This is the optimal combination of parameters. This is for number of features **NF = 12** and number of rules **NR = 5** with **radii = 0.605**. The error curves for the number of attributes and the number of rules are shown below:
 
