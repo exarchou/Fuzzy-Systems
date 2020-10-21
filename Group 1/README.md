@@ -95,13 +95,13 @@ At this point we can calculate the values of the parameters:
 
 The reference signal was fed using the tool **signal Builder** and the following function:
 
-![image-20201021143136576](C:\Users\Dimitris\AppData\Roaming\Typora\typora-user-images\image-20201021143136576.png)
+<img src="images/6.jpg">
 
 
 
 With the help of tool **Data Inspector** we can see that our system meets the requirements:
 
-<img src="C:\Users\Dimitris\AppData\Roaming\Typora\typora-user-images\image-20201021143358867.png" alt="image-20201021143358867" style="zoom:80%;" />
+<img src="images/7.jpg">
 
 
 
@@ -113,7 +113,7 @@ To reduce rise time and steady state error the gains went through the process of
 
 
 
-![image-20201021143839725](C:\Users\Dimitris\AppData\Roaming\Typora\typora-user-images\image-20201021143839725.png)
+<img src="images/8.jpg">
 
 
 
@@ -121,7 +121,7 @@ Observing the Data Inspector is clear that rise time and elevation were signific
 
 
 
-![image-20201021143940748](C:\Users\Dimitris\AppData\Roaming\Typora\typora-user-images\image-20201021143940748.png)
+<img src="images/9.jpg">
 
 
 
@@ -131,7 +131,7 @@ Observing the Data Inspector is clear that rise time and elevation were signific
 
 At this point we will examine the output of the system, when input is fed with the rule **IF e is PS AND Δe is NM\. **
 
-![image-20201021144200867](C:\Users\Dimitris\AppData\Roaming\Typora\typora-user-images\image-20201021144200867.png)
+<img src="images/10.jpg">
 
 
 
@@ -141,7 +141,7 @@ At this point we will examine the output of the system, when input is fed with t
 
 Function **gensurf** was used to produce a graphical relationship between input and output. As output for each fuzzy set is considered its middle point, because of the COS defuzzifier.
 
-<img src="C:\Users\Dimitris\AppData\Roaming\Typora\typora-user-images\image-20201021144630298.png" alt="image-20201021144630298" style="zoom:80%;" />
+<img src="images/11.jpg">
 
 
 
@@ -155,21 +155,20 @@ The signal stands for the speed of a train. For this reason it is essential to e
 
 ### Simulink
 
-![image-20201021145322685](C:\Users\Dimitris\AppData\Roaming\Typora\typora-user-images\image-20201021145322685.png)
+<img src="images/12.jpg">
 
 The reference signal has a trapezoidal form, using the signal builder:
 
 
 
-![image-20201021161531812](C:\Users\Dimitris\AppData\Roaming\Typora\typora-user-images\image-20201021161531812.png)
-
+<img src="images/13.jpg">
 
 
 With the help of tool **Data Inspector** we can see that our system meets the requirements:
 
 
 
-![image-20201021145336129](C:\Users\Dimitris\AppData\Roaming\Typora\typora-user-images\image-20201021145336129.png)
+<img src="images/14.jpg">
 
 
 
@@ -179,7 +178,7 @@ With the help of tool **Data Inspector** we can see that our system meets the re
 
 The hypothesis of this scenario is that we have a non zero T~L~ that stands for a disturbance.
 
-![image-20201021145605087](C:\Users\Dimitris\AppData\Roaming\Typora\typora-user-images\image-20201021145605087.png)
+<img src="images/15.jpg">
 
 Our controller has to observe this disturbance and reject it. The goal of this scenario is to compare the functionality of a **Fuzzy PI Controller** and a **Conventional PI Controller**.
 
@@ -189,9 +188,9 @@ Our controller has to observe this disturbance and reject it. The goal of this s
 
 The two different controllers were embodied to the initial circuit, in order to compare their responses.
 
-<img src="C:\Users\Dimitris\AppData\Roaming\Typora\typora-user-images\image-20201021145902493.png" alt="image-20201021145902493" style="zoom:150%;" />
+<img src="images/16.jpg">
 
-![image-20201021145919646](C:\Users\Dimitris\AppData\Roaming\Typora\typora-user-images\image-20201021145919646.png)
+<img src="images/17.jpg">
 
 
 
@@ -199,7 +198,7 @@ With the help of tool **Data Inspector** we can see the responses:
 
 
 
-![image-20201021150145948](C:\Users\Dimitris\AppData\Roaming\Typora\typora-user-images\image-20201021150145948.png)
+<img src="images/18.jpg">
 
 
 
