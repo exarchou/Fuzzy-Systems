@@ -133,7 +133,7 @@ The dataset that will be used for this part is the **Superconductivity dataset**
 
 
 - **5-Fold Cross Validation** application for each point of the grid. The training set is divided into 5 sections. 4 of them are used for the training of one model at a time and the last one for its validation. Five different combinations give birth to 5 different models for each point of the grid. Each of these models is trained with **anfis** with different training and verification sets from the rest 4. All models have as their initial **fis** what was born in the previous step. A small number of iterations are used (40 due to increased computational complexity.
-- Models estimate outputs with inputs to the initial validation sets via the **evalfis** function. The corresponding position of the error grid is filled with Mean-Squared Error.
+- Models estimate outputs via the **evalfis** function, used on **chckFIS** with inputs the initial validation set. The corresponding position of the error grid is filled with Mean-Squared Error.
 - Finally, the point of the grid that gives the minimum **MSE** is calculated. This is the optimal combination of parameters. This is for number of features **NF = 12** and number of rules **NR = 5** with **radii = 0.605**. The error curves for the number of attributes and the number of rules are shown below:
 
 <p align="center">
