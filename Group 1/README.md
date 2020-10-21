@@ -17,7 +17,7 @@ The control signal has to meet the following standards:
 
 - Rise Time less than 160 msec
 
-- V~a~(t) < 200V for t >0
+- Va(t) < 200V for t >0
 
   
 
@@ -63,37 +63,30 @@ Membership Functions have the following forms:
 
 ## *Scenario 1*
 
-We investigate the hypothesis of T~L~ = 0.                              
-$$
-\frac{Ω(s)}{V~a~(s)} = \frac{18.69}{s+12.064}
-$$
+We investigate the hypothesis of T<sub>L</sub> = 0.                              
 
-![](https://www.codecogs.com/eqnedit.php?latex=Cost&space;=&space;[10L1.D_{size}(1+\frac{L1.D_{Assoc}}{20}&space;+&space;\frac{CacheLine}{128})+10L1.I_{size}(1+\frac{L1.I_{Assoc}}{20}&space;+&space;\frac{CacheLine}{128})+L2_{size}(1+\frac{L2_{Assoc}}{40}+\frac{CacheLine}{256})])
+<a href="https://www.codecogs.com/eqnedit.php?latex=\frac{W(s)}{Va(s)}&space;=&space;\frac{18.69}{s&plus;12.064}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\frac{W(s)}{Va(s)}&space;=&space;\frac{18.69}{s&plus;12.064}" title="\frac{W(s)}{Va(s)} = \frac{18.69}{s+12.064}" /></a>
+
 
 In automatic control systems a PI controller has the form: 
-$$
-H_c (s)=K_P+K_I/s = \frac{K_P (s+K_I/K_P )}{s}
-$$
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=H_c&space;(s)=K_P&plus;K_I/s&space;=&space;\frac{K_P&space;(s&plus;K_I/K_P&space;)}{s}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?H_c&space;(s)=K_P&plus;K_I/s&space;=&space;\frac{K_P&space;(s&plus;K_I/K_P&space;)}{s}" title="H_c (s)=K_P+K_I/s = \frac{K_P (s+K_I/K_P )}{s}" /></a>
 
 Under those cases, the transfer function of the open loop system is:
-$$
-A(s)=  \frac{18.69 K_P (s+K_I/K_P ) )}{s (s+12.064)}
-$$
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=A(s)=&space;\frac{18.69&space;K_P&space;(s&plus;K_I/K_P&space;)&space;)}{s&space;(s&plus;12.064)}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?A(s)=&space;\frac{18.69&space;K_P&space;(s&plus;K_I/K_P&space;)&space;)}{s&space;(s&plus;12.064)}" title="A(s)= \frac{18.69 K_P (s+K_I/K_P ) )}{s (s+12.064)}" /></a>
 
 
 The system that was described was solved in order to calculate the values of the unknown variables. I have found that the values **K~p~ = 2** and **K~I~ = 51.077** satisfy our requirements.
 
 At this point we can calculate the values of the parameters:
 
-- $$
-  a=T_i=K_P/K_I =0.039
-  $$
 
-  
+- <a href="https://www.codecogs.com/eqnedit.php?latex=a=T_i=K_P/K_I&space;=0.039" target="_blank"><img src="https://latex.codecogs.com/gif.latex?a=T_i=K_P/K_I&space;=0.039" title="a=T_i=K_P/K_I =0.039" /></a>
 
-- $$
-  K= \frac{K_P}{F*a*K_e}=\frac{2}{0.039 F{1}}=51.07
-  $$
+- <a href="https://www.codecogs.com/eqnedit.php?latex=K=&space;\frac{K_P}{F*a*K_e}=\frac{2}{0.039&space;F{1}}=51.07" target="_blank"><img src="https://latex.codecogs.com/gif.latex?K=&space;\frac{K_P}{F*a*K_e}=\frac{2}{0.039&space;F{1}}=51.07" title="K= \frac{K_P}{F*a*K_e}=\frac{2}{0.039 F{1}}=51.07" /></a>
+
+
 
 
 
@@ -246,6 +239,5 @@ With the help of tool **Data Inspector** we can see the responses:
 ## Conclusion
 
 It is obvious that the **Fuzzy PI Controller** behaves more efficient than the  **Conventional PI Controller**. Not only the rise time is significantly smaller, but also it succeeds a better disturbance rejection. As we can see the gain of the disturbance is: 
-$$
-20 log⁡(164/150)=0.77<20dB
-$$
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=20&space;log⁡(164/150)=0.77<20dB" target="_blank"><img src="https://latex.codecogs.com/gif.latex?20&space;log⁡(164/150)=0.77<20dB" title="20 log⁡(164/150)=0.77<20dB" /></a>
