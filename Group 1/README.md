@@ -65,7 +65,7 @@ Membership Functions have the following forms:
 
 We investigate the hypothesis of T<sub>L</sub> = 0.                              
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=\frac{W(s)}{Va(s)}&space;=&space;\frac{18.69}{s&plus;12.064}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\frac{W(s)}{Va(s)}&space;=&space;\frac{18.69}{s&plus;12.064}" title="\frac{W(s)}{Va(s)} = \frac{18.69}{s+12.064}" /></a>
+<a href="https://www.codecogs.com/eqnedit.php?latex=20&space;log(164/150)=0.77<20dB" target="_blank"><img src="https://latex.codecogs.com/gif.latex?20&space;log(164/150)=0.77<20dB" title="20 log(164/150)=0.77<20dB" /></a>
 
 
 In automatic control systems a PI controller has the form: 
@@ -83,8 +83,12 @@ At this point we can calculate the values of the parameters:
 
 
 - <a href="https://www.codecogs.com/eqnedit.php?latex=a=T_i=K_P/K_I&space;=0.039" target="_blank"><img src="https://latex.codecogs.com/gif.latex?a=T_i=K_P/K_I&space;=0.039" title="a=T_i=K_P/K_I =0.039" /></a>
-
 - <a href="https://www.codecogs.com/eqnedit.php?latex=K=&space;\frac{K_P}{F*a*K_e}=\frac{2}{0.039&space;F{1}}=51.07" target="_blank"><img src="https://latex.codecogs.com/gif.latex?K=&space;\frac{K_P}{F*a*K_e}=\frac{2}{0.039&space;F{1}}=51.07" title="K= \frac{K_P}{F*a*K_e}=\frac{2}{0.039 F{1}}=51.07" /></a>
+
+
+
+
+
 
 
 
